@@ -1,0 +1,25 @@
+@media screen and (max-width:840px) {
+
+    .escritaCadastre {
+        font-size: .8em;
+    }
+}
+
+
+@media screen and (max-width: 775px) {
+    .logoFrase {
+        display: none;
+    }
+
+    .lista>a,
+    .lista>button {
+        min-width: 90px;
+        max-width: 95px;
+    }
+
+    .background {
+        background-size: 900px 900px;
+        width: 100vw;
+        height: 100vh;
+    }
+}

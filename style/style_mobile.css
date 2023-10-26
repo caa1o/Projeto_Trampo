@@ -1,0 +1,89 @@
+@media screen and (max-width:680px) {
+
+
+    .logoHeader>a {
+        min-width: 27vw;
+        max-width: 28vw;
+    }
+
+    .lista {
+        gap: 5%;
+        font-size: .5em;
+    }
+
+    .lista>a,
+    .lista>button {
+        min-width: 59px;
+        max-width: 60px;
+        height: 20px;
+        border-radius: 15px;
+    }
+
+    .background {
+        background-size: 714px 400px;
+        flex-direction: column;
+        width: 100vw;
+        height: 800px;
+    }
+
+    .descricao {
+        height: 40%;
+        width: 80%;
+    }
+
+    .Trampo {
+        font-size: 3em;
+    }
+
+    .FraseInicio {
+        font-size: 1.5em;
+    }
+
+    .textoBusca {
+        width: 80%;
+    }
+
+    .btnBuscaInicio {
+        width: 12%;
+    }
+
+    .btnBuscaInicio>span,
+    .logoHeader>h2 {
+        display: none;
+    }
+
+    .Cadastre {
+        width: 60%;
+        height: 300px;
+    }
+
+    .conteudo1 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 40px 5%;
+    }
+
+    .conteudo2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bodyServicos {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .bodyServicos>a {
+        flex-direction: row-reverse;
+        gap: 5%;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .footer {
+        padding: 80px 25px;
+    }
+
+}

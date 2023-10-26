@@ -1,0 +1,394 @@
+:root {
+    --texto-claro: blanchedalmond;
+    --background-btn-azul: linear-gradient(to right, #232b77 0%, #2c2cb9 51%, #232b77 100%);
+    --background-btn-roxo: linear-gradient(to right, #240339 0%, #740a80 51%, #24033b 100%);
+    --box-shadow: 5px 5px 10px #0000004b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+header>div,
+header>div>div,
+.lista {
+    display: flex;
+    flex-direction: row;
+}
+
+header>div {
+    justify-content: space-between;
+}
+
+header>div>div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logoHeader>a {
+    min-width: 200px;
+    max-width: 13vw;
+}
+
+.logoHeader>a>img {
+    max-width: 100%;
+}
+
+.logoHeader>h2 {
+    color: #7901e9e1;
+    font-size: 2.5em;
+}
+
+.lista {
+    justify-content: flex-end;
+    gap: 10%;
+    align-items: center;
+}
+
+.lista>a,
+.lista>button {
+    min-width: 150px;
+    height: 40px;
+    color: var(--texto-claro);
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+}
+
+.lista>a,
+.lista>button,
+.logoHeader>h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lista>a:hover,
+.lista>button:hover,
+.btnCadastre:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    scale: 1.02;
+    transition: 0.2s;
+}
+
+.lista>a,
+.btnTrabalhadores {
+    background: var(--background-btn-azul);
+}
+
+.lista>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btnTrabalhadores {
+    width: 200px;
+}
+
+.btnEntrar {
+    background: var(--background-btn-roxo);
+}
+
+.background {
+    background: transparent url(../mainpage/img/trabalhadora.jpg) no-repeat;
+    background-size: 1920px 1080px;
+    height: 100vh;
+    width: 100vw;
+    color: var(--texto-claro);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 10vw 1fr 10vw;
+    grid-template-rows: 1fr 2fr 6fr;
+}
+
+.apresentacao_trabalhador {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.nome_trabalhador {
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 2.5em;
+}
+
+.profissao {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 1.8em;
+}
+
+.competencias {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+}
+
+.about {
+    font-size: 1.2em;
+}
+
+.descricao_trabalhador {
+    font-size: 1.2em;
+}
+
+.container_servicos_img {
+    grid-area: 3 / 2 / 4 / 3;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 20px;
+    padding: 20px;
+}
+
+.container_servicos_img>img {
+    max-width: 300px;
+}
+
+.Cadastre {
+    display: grid;
+    grid-template-columns: 8% 1fr 8%;
+    grid-template-rows: 10% 2fr 1fr 10%;
+    color: black;
+    background-color: white;
+    width: 25%;
+    height: 60%;
+    font-size: 2.2em;
+    border: 10px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 15%;
+    box-shadow: 1px 20px 40px rgb(63, 3, 136);
+    border-top-color: #370459;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-bottom-color: #4a1170;
+    row-gap: 2%;
+}
+
+.escritaCadastre {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.btnCadastre {
+    width: 100%;
+    height: 60px;
+    background: var(--background-btn-roxo);
+    color: var(--texto-claro);
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    font-size: .8em;
+}
+
+.Cadastre>div {
+    grid-area: 3 / 2 / 4 / 3;
+    text-align: center;
+}
+
+.descricao {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    height: 50%;
+    width: 50%;
+    color: white;
+    text-shadow: 2px 2px 4px #90909099;
+}
+
+.Trampo {
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 5em;
+}
+
+.FraseInicio {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 3em;
+}
+
+.buscaInicio {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.textoBusca {
+    width: 70%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 0 0 20px;
+    border: none;
+}
+
+.btnBuscaInicio {
+    width: 25%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: #181818;
+    color: var(--texto-claro);
+}
+
+.btnBuscaInicio:hover {
+    background: #3a3a3a;
+    color: white;
+    scale: 1.02;
+    transition: 0.2s;
+}
+
+.conteudo1 {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 60px 50px;
+    padding: 3%;
+    font-size: 2em;
+    column-gap: 3%;
+    background: #f8f3f3b3;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+.imgTrabalhador {
+    grid-area: 1 / 1 / 4 / 2;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+.escritaSobreNos {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.conteudo2 {
+    text-align: center;
+}
+
+.bodyServicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 35px 5% 150px;
+}
+
+.bodyServicos>a {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.bodyServicos>a>img {
+    width: 380px;
+    height: 280px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+.bodyServicos>a>p {
+    font-size: 2em;
+}
+
+.footer {
+    background: linear-gradient(#1b0322 85%, #3d115a 100%);
+    color: var(--texto-claro);
+    font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    padding: 80px 0 80px 65vw;
+    line-height: 2.5em;
+}
+
+.escritaFooter {
+    border-bottom: 2px solid var(--texto-claro);
+    width: 90%;
+}
+
+@media screen and (max-width:1600px) {
+
+    .lista {
+        gap: 9%;
+        font-size: .9em;
+    }
+
+    .logoHeader>h2,
+    .Cadastre,
+    .conteudo1 {
+        font-size: 1.5em;
+    }
+
+    .FraseInicio {
+        font-size: 2em;
+    }
+
+    .bodyServicos,
+    .footer {
+        font-size: .7em;
+    }
+
+    .bodyServicos>a>img {
+        width: 228px;
+        height: 168px;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .lista {
+        gap: 7%;
+    }
+
+    .logoHeader>h2 {
+        font-size: 1.1em;
+    }
+
+    .conteudo1 {
+        font-size: 1.2em
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+    .logoHeader>h2 {
+        font-size: .8em
+    }
+
+    .lista {
+        gap: 5%;
+        font-size: .8em;
+    }
+
+    .Cadastre {
+        font-size: 1.3em;
+        height: 50%;
+    }
+
+    .conteudo1 {
+        font-size: 1em;
+    }
+
+    .bodyServicos>a>img {
+        width: 136px;
+        height: 100px;
+    }
+
+}

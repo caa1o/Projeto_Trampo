@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --box-shadow: 5px 5px 10px #0000004b;
+}
+
+@media screen and (min-width: 500px) {
+
+    header {
+        display: flex;
+        justify-content: baseline;
+        width: 100%;
+        background-color: #ffffff;
+        height: 60px;
+        box-shadow: 25px 25px 25px black;
+    }
+
+
+
+    .logo {
+        font-size: 40px;
+        margin-left: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #000000;
+        top: -1px;
+        letter-spacing: -0.03em;
+        text-shadow: 2px 2px 2px #ababab;
+        height: 50px;
+        width: 200px;
+    }
+
+    .logoFrase {
+        color: #7901e9e1;
+        position: absolute;
+        top: 10px;
+        left: 250px;
+        font-family: Roboto, cursive;
+        font-size: 33px;
+        font-style: italic;
+        letter-spacing: -0.03em;
+        text-shadow: 2px 2px 2px #d4d4d4;
+    }
+
+    .lista {
+        position: absolute;
+        padding: 0px;
+        right: 30px;
+        top: -0px;
+        display: flex;
+        margin: 4px;
+        letter-spacing: -0.01em;
+    }
+
+    .btnContato {
+        margin-right: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 100px;
+        font-weight: 300;
+        background-image: linear-gradient(to right, #232b77 0%, #2c2cb9 51%, #232b77 100%);
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 1px 1px 1px rgb(19, 3, 84);
+    }
+
+    .btnContato:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+        scale: 1.02;
+        transition: 0.2s;
+    }
+
+    .btnTrabalhadores {
+        margin-right: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 50px;
+        width: 160px;
+        font-weight: 300;
+        background-image: linear-gradient(to right, #232b77 0%, #2c2cb9 51%, #232b77 100%);
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 1px 1px 1px rgb(22, 10, 129);
+
+    }
+
+    .btnTrabalhadores:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+        scale: 1.02;
+        transition: 0.2s;
+    }
+
+
+    .btnEntrar {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 50px;
+        width: 120px;
+        font-weight: 300;
+        background-image: linear-gradient(to right, #240339 0%, #740a80 51%, #24033b 100%);
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 2px 2px 3px rgb(78, 2, 132);
+    }
+
+    .btnEntrar:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+        scale: 1.02;
+        transition: 0.2s;
+    }
+
+    .background {
+        z-index: 1;
+    }
+
+    .imgTrabalhadora {
+        width: 100%;
+        height: 950px;
+        opacity: 0.88;
+        box-shadow: 5px 5px 5px #02012d;
+    }
+
+    .Trampo {
+        position: absolute;
+        top: 150px;
+        font-size: 80px;
+        left: 110px;
+        color: #ffffff;
+        font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-shadow: 25px 25px 25px rgba(0, 0, 0, 0.6);
+        letter-spacing: -0.03em;
+    }
+
+    .FraseInicio {
+        position: absolute;
+        top: 300px;
+        font-size: 45px;
+        left: 80px;
+        color: #ffffff;
+        font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
+        letter-spacing: -0.03em;
+    }
+
+    .buscaInicio {
+        position: absolute;
+        top: 600px;
+        left: 82px;
+    }
+
+    .buscaInicio>form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+
+    .textoBusca {
+        padding-left: 1em;
+        width: 800px;
+        height: 60px;
+        font-size: 25px;
+        border-left: none;
+        border-right: none;
+        border-radius: 50px;
+        border-color: rgb(0, 0, 0);
+        box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.859);
+        font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .textoBusca::placeholder {
+        font-size: 0.8em;
+
+    }
+
+    .btnBuscaInicio {
+        min-width: 9em;
+        /* position: relative; */
+        height: 60px;
+        width: 85px;
+        border-radius: 20px;
+        left: 10px;
+        top: -10px;
+        border-top-style: ridge;
+        font-size: 15px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        border: none;
+        box-shadow: 3px 3px 5px #000000;
+        cursor: pointer;
+        font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .btnBuscaInicio:hover {
+        scale: 1.02;
+        transition: 0.8s;
+    }
+
+    #formCadastre {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .btnCadastre1 {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .btnCadastre {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;
+        width: 400px;
+        margin-left: 40px;
+        height: 80px;
+        font-size: 25px;
+        cursor: pointer;
+        border-radius: 100px;
+        background-image: linear-gradient(to right, #240439 0%, #660c70 51%, #240439 100%);
+        transition: 0.5s;
+        color: white;
+        box-shadow: 2px 2px 10px black;
+    }
+
+    .btnCadastre:hover {
+        background-position: right center;
+        color: #ffffff;
+        text-decoration: none;
+        scale: 1.02;
+        transition: 0.5s;
+    }
+
+    .Cadastre {
+        width: 500px;
+        height: 500px;
+        border: 10px solid;
+        border-color: rgb(255, 255, 255);
+        border-radius: 15%;
+        background-color: white;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 175px;
+        right: 80px;
+        box-shadow: 1px 20px 40px rgb(63, 3, 136);
+        border-top-color: #370459;
+        border-top-style: ridge;
+        border-bottom-style: ridge;
+        border-bottom-color: #4a1170;
+    }
+
+    .escritaCadastre {
+        top: 45px;
+        left: 22px;
+        text-shadow: 2px 2px 4px rgba(144, 144, 144, 0.6);
+        font-size: 38px;
+        font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #000000;
+        letter-spacing: -0.02em;
+        line-height: 1.3;
+        margin-bottom: 20px;
+        margin-left: 39px;
+        margin-top: 50px;
+    }
+
+    .conteudo1 {
+        margin: 20px 2em 0 2em;
+        padding: 0 2em;
+        display: flex;
+        align-items: center;
+        height: 500px;
+        background-color: #ffffff;
+        border-radius: 6px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .imgTrabalhador {
+        width: 800px;
+        height: 380px;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .escritaSobreNos {
+        font-size: 32px;
+        color: #292929;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-left: 50px;
+        left: 680px;
+        margin: 50px;
+    }
+
+    .escritaServicos {
+        font-size: 40px;
+        color: #2c2c2c;
+        font-family: Roboto, cursive;
+        align-items: baseline;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-shadow: 2px 4px 2px rgb(216, 216, 216);
+    }
+
+    .bodyServicos {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        font-family: Roboto, cursive;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .bodyServicos>div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bodyServicos>div>img{
+        width: 20%;
+        max-height: 200px;
+        box-shadow: var(--box-shadow);
+        cursor: pointer;
+    }
+
+    .conteudo2 {
+        margin: 60px;
+    }
+
+
+    .headerServicos {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        font-family: Roboto, cursive;
+        color: rgb(0, 0, 0);
+        font-size: 28px;
+        z-index: 1;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 295px;
+        width: 100%;
+        background-image: linear-gradient(rgb(27, 3, 34) 85%, #3d115a 100%);
+    }
+
+    .escritaFooter {
+        font-family: Graphik-Medium, Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: rgb(255, 255, 255);
+        letter-spacing: -0.01em;
+        line-height: 2;
+        left: 800px;
+        font-size: 18px;
+        margin-right: 100px;
+        text-shadow: 0px 1px 2px #ba37c8;
+        box-shadow: 0px 1px rgb(255, 255, 255);
+    }
+
+}
