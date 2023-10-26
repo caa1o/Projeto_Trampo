@@ -1,6 +1,11 @@
 @media screen and (max-width:680px) {
 
 
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
     .logoHeader>a {
         min-width: 27vw;
         max-width: 28vw;
