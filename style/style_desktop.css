@@ -330,6 +330,14 @@ header>div>div {
     width: 90%;
 }
 
+.imgSuporte{
+    position: fixed;
+    cursor: pointer;
+    z-index: 1;
+    bottom: 20px;
+    margin-left: 95%;
+}
+
 @media screen and (max-width:1600px) {
 
     .lista {
