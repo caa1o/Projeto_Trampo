@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.criarAnuncio {
+    margin-bottom: 50px;
+    padding: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px black;
+    background-image: linear-gradient(to right,
+    #240339 0%,
+    #740a80 51%,
+    #24033b 100%);
+    border-top: 5px white;
+    box-shadow: 0px 5px 8px rgb(78, 2, 132);
+}
+
+.criarAnuncioTexto {
+    text-align: center;
+    font-size: 2.2em;
+    text-shadow: 2px 2px 2px rgb(107, 107, 107);
+}
+
+.caixas {
+    display: flex;
+    font-size: 20px;
+    padding: 40px;
+}
+
+.caixaServicosECidades {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.inputImagens {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+.inputTel {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 200px;
+}
+
+.inputbox {
+    margin: 20px;
+}
+
+.caixaDescricao {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    width: 50%;
+}
+
+#msg:focus {
+    background-color: rgb(236, 200, 250);
+}
+
+.labelDesc {
+    text-align: center;
+}
+
+.inputSubmit {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-image: linear-gradient(
+    to right,
+    #240439 0%,
+    #660c70 51%,
+    #240439 100%
+    );
+    border-radius: 30px;
+    box-shadow: 2px 3px 8px #660c70;
+    font-size: 1.4em;
+    color: white;
+    border: none;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.inputSubmit:hover {
+    scale: 1.01;
+    border-radius: 33px;
+    box-shadow: 2px 3px 8px #660c70;
+    border-color: white;
+    border: 1px 1px 1px white;
+}
+
+@media screen and (max-width:700px) {
+    
+    .inputSubmit {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .criarAnuncio h1 {
+        font-size: 1.9em;
+    }
+
+    .criarAnuncio{
+        margin-bottom: 2px;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+
+    .inputImagens {
+        font-size: 15px;
+    }
+    .inputTel {
+        text-align: center;
+    }
+
+    .caixas {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        font-size: 15px;
+    }
+    .caixaDescricao{
+        width: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
