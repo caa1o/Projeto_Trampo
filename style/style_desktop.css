@@ -334,9 +334,26 @@ header>div>div {
     position: fixed;
     cursor: pointer;
     z-index: 1;
-    bottom: 20px;
-    margin-left: 95%;
+    bottom: 10px;
+    right: 15px;
 }
+
+.imgSuporte:hover {
+    scale: 1.01;
+}
+
+.paginaCriarAnuncio {
+    position: fixed;
+    cursor: pointer;
+    z-index: 1;
+    bottom: 80px;
+    right: 15px;
+}
+
+.paginaCriarAnuncio:hover {
+    scale: 1.01;
+}
+
 
 @media screen and (max-width:1600px) {
 
