@@ -123,55 +123,6 @@ header>div>div {
     gap: 5%;
 }
 
-.card {
-    display: grid;
-    grid-template-columns: 10vw 1fr 10vw;
-    grid-template-rows: 1fr 2fr 6fr;
-}
-
-.apresentacao_trabalhador {
-    grid-area: 1 / 2 / 2 / 3;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.nome_trabalhador {
-    grid-area: 1 / 1 / 2 / 3;
-    font-size: 2.5em;
-}
-
-.profissao {
-    grid-area: 2 / 2 / 3 / 3;
-    font-size: 1.8em;
-}
-
-.competencias {
-    grid-area: 2 / 2 / 3 / 3;
-    display: grid;
-}
-
-.about {
-    font-size: 1.2em;
-}
-
-.descricao_trabalhador {
-    font-size: 1.2em;
-}
-
-.container_servicos_img {
-    grid-area: 3 / 2 / 4 / 3;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px 20px;
-    padding: 20px;
-}
-
-.container_servicos_img>img {
-    max-width: 300px;
-}
-
 .Cadastre {
     display: grid;
     grid-template-columns: 8% 1fr 8%;

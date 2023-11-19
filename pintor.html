@@ -2,36 +2,79 @@
 <html lang="pt-br">
 
 <head>
-    <title>Anuncio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintor</title>
     <link rel="stylesheet" href="style/style_desktop.css">
+    <link rel="stylesheet" href="style/style_tablet.css">
     <link rel="stylesheet" href="style/style_mobile.css">
-    <link rel="stylesheet" href="style/style_cadastro.css">
+    <link rel="stylesheet" href="style/apresentacao.css">
+    <link rel="shortcut icon" href="mainpage/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header class="cabecalho_dinamico"></header>
+    <div class="cartao-apresentacao">
+        <section class="cartao">
+            <div class="apresentacao">
+                <img src="mainpage/img/Avatar.avif" alt="Foto perfil" class="fotoPerfil">
+                <p><strong>Sobre:</strong> Trabalho como pintor a 15 anos, com experiências em diversos ambientes e
+                    materias de trabalho. Sempre prezando a limpeza, flexibilidade de acordo com a preferência do
+                    cliente, eficiência no uso dos materias corretos e ferramentas. Tudo isto levando em conta a
+                    expectativa do cliente e satisfação ao fim de cada trabalho.</p>
+                <p><strong>Descricao de suas competências:</strong> Realiza pintura em paredes internas e externas.
+                    Prepara as superfícies antes de pintá-las, como limpeza,aplicação de massa fina ou corrida e
+                    lixamento. Aplica papel de parede e gesso para acabamento.</p>
+            </div>
 
-    <section class="card">
-        <div class="apresentacao_trabalhador">
-            <h3 class="nome_trabalhador">Pedro Avelino</h3>
-            <h4 class="profissao">Profissão: Pintor</h4>
-        </div>
+            <div class="informacao">
+                <h2>Pedro Avelino</h2>
+                <p>Categoria: pintor</p>
+                <p>São Paulo, Brail</p>
+            </div>
 
-        <div class="competencias">
-            <p class="about"><b>Sobre:</b> Trabalho como pintor a 15 anos, com experiências em diversos ambientes e materias de trabalho. Sempre prezando a limpeza, flexibilidade de acordo com a preferência do cliente, eficiência no uso dos materias corretos e ferramentas. Tudo isto levando em conta a expectativa do cliente e satisfação ao fim de cada  trabalho.</p>
-            <p class="descricao_trabalhador"><b>Descrição de suas competências:</b> Realiza pintura em paredes internas e externas. Prepara as superfícies antes de pintá-las, como limpeza,aplicação de massa fina ou corrida e lixamento. Aplica papel de parede e gesso para acabamento.</p>
-        </div>
-        <div class="container_servicos_img">
-            <img src="mainpage/img/pintor/pintor1.jpg" alt="pintor">
-            <img src="mainpage/img/pintor/pintor2.jpg" alt="pintor">
-            <img src="mainpage/img/pintor/pintor3.jpg" alt="pintor">
-            <img src="mainpage/img/pintor/pintor4.jpg" alt="pintor">
-            <img src="mainpage/img/pintor/pintor5.jpg" alt="pintor">
-            <img src="mainpage/img/pintor/pintor6.jpg" alt="pintor">
-        </div>
-    </section>
+            <div class="imagens" id="imagens">
+                <img src="mainpage/img/pintor/pintor1.jpg" alt="pintor" id="foto1">
+                <img src="mainpage/img/pintor/pintor2.jpg" alt="pintor" id="foto2">
+                <img src="mainpage/img/pintor/pintor3.jpg" alt="pintor" id="foto3" class="sumir">
+                <img src="mainpage/img/pintor/pintor4.jpg" alt="pintor" id="foto4" class="sumir">
+                <img src="mainpage/img/pintor/pintor5.jpg" alt="pintor" id="foto5" class="sumir">
+                <img src="mainpage/img/pintor/pintor6.jpg" alt="pintor" id="foto6" class="sumir">
+
+                <input type="button" value="&#8645; Mostrar mais" class="btn" id="maisFotos">
+            </div>
+            <input type="button" value="Mostrar Menos" class="btn sumir" id="menosFotos">
+            <form action="https://wa.me/+5511953178169" method="post" target="_blank">
+                <input type="submit" value="Fazer proposta" class="btn">
+            </form>
+        </section>
+    </div>
+
+    <div class="box_feedback">
+        <section class="feedback">
+            <div>
+                <p>Ótimo trabalhos</p>
+            </div>
+
+            <div>
+                <p>Trabalhador competente</p>
+            </div>
+
+            <div>
+                <p>fasghfx\dfvhbhjk</p>
+            </div>
+
+            <div>
+                <p>vsdcasdjdgasddcdbu</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="imgSuporte">
+        <a href="https://wa.me/+5511953178169" target="_blank">
+            <img src="imgWhats.png" alt="Suporte Imagem" width="50" height="50" title="Falar com o suporte Trampo.">
+        </a>
+    </div>
 
     <footer class="footer">
         <div class="escritaFooter">
@@ -40,6 +83,9 @@
                 04795-100<br> (11) 91234-5678</p>
         </div>
     </footer>
+
     <script type="module" src="scripts/header.js"></script>
+    <script src="scripts/img.js"></script>
 </body>
-</hmtl>
+
+</html>

@@ -2,36 +2,74 @@
 <html lang="pt-br">
 
 <head>
-    <title>Anuncio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletricista</title>
     <link rel="stylesheet" href="style/style_desktop.css">
+    <link rel="stylesheet" href="style/style_tablet.css">
     <link rel="stylesheet" href="style/style_mobile.css">
-    <link rel="stylesheet" href="style/style_cadastro.css">
+    <link rel="stylesheet" href="style/apresentacao.css">
+    <link rel="shortcut icon" href="mainpage/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header class="cabecalho_dinamico"></header>
+    <div class="cartao-apresentacao">
+        <section class="cartao">
+            <div class="apresentacao">
+                <img src="mainpage/img/Avatar.avif" alt="Foto perfil" class="fotoPerfil">
+                <p><strong>Sobre:</strong> Habilidades em instalação de dijuntores,fusíveis,tomadas,interruptores,lâmpadas quadros de luz. Troca e instalação de nova fiação para instalações elétricas. Instalação e manutenção de chuveiros,torneiras elétricas,condicionadores de ar e reparos elétricos em geral.</p>
+                <p><strong>Descrição de suas competências:</strong> Executar planos de fiação elétrica para um bom funcionamento da iluminação, dos interfones e de outros sistemas elétricos. Instalar aparelhos elétricos, luminárias equipamentos para alarmes e componentes de segurança e de destribuição.</p>
+            </div>
 
-    <section class="card">
-        <div class="apresentacao_trabalhador">
-            <h3 class="nome_trabalhador">Eduardo dos Santos</h3>
-            <h4 class="profissao">Profissão: Eletricista</h4>
-        </div>
+            <div class="informacao">
+                <h2>Eduardo dos Santos</h2>
+                <p>Profissão: Eletricista</p>
+                <p>São Paulo, Brail</p>
+            </div>
 
-        <div class="competencias">
-            <p class="about"><b>Sobre:</b> Habilidades em instalação de dijuntores,fusíveis,tomadas,interruptores,lâmpadas quadros de luz. Troca e instalação de nova fiação para instalações elétricas. Instalação e manutenção de chuveiros,torneiras elétricas,condicionadores de ar e reparos elétricos em geral.</p>
-            <p class="descricao_trabalhador"><b>Descrição de suas competências:</b> Executar planos de fiação elétrica para um bom funcionamento da iluminação, dos interfones e de outros sistemas elétricos. Instalar aparelhos elétricos, luminárias equipamentos para alarmes e componentes de segurança e de destribuição.</p>
-        </div>
-        <div class="container_servicos_img">
-            <img src="mainpage/img/eletricista/eletricista1.jpg" alt="eletricista">
-            <img src="mainpage/img/eletricista/eletricista2.jpg" alt="eletricista">
-            <img src="mainpage/img/eletricista/eletricista3.jpg" alt="eletricista">
-            <img src="mainpage/img/eletricista/eletricista4.jpg" alt="eletricista">
-            <img src="mainpage/img/eletricista/eletricista5.jpg" alt="eletricista">
-            <img src="mainpage/img/eletricista/eletricista6.jpg" alt="eletricista">
-        </div>
-    </section>
+            <div class="imagens" id="imagens">
+                <img src="mainpage/img/eletricista/eletricista1.jpg" alt="eletricista" id="foto1">
+                <img src="mainpage/img/eletricista/eletricista2.jpg" alt="eletricista" id="foto2">
+                <img src="mainpage/img/eletricista/eletricista3.jpg" alt="eletricista" id="foto3" class="sumir">
+                <img src="mainpage/img/eletricista/eletricista4.jpg" alt="eletricista" id="foto4" class="sumir">
+                <img src="mainpage/img/eletricista/eletricista5.jpg" alt="eletricista" id="foto5" class="sumir">
+                <img src="mainpage/img/eletricista/eletricista6.jpg" alt="eletricista" id="foto6" class="sumir">
+
+                <input type="button" value="&#8645; Mostrar mais" class="btn" id="maisFotos">
+            </div>
+            <input type="button" value="Mostrar Menos" class="btn sumir" id="menosFotos">
+            <form action="https://wa.me/+5511953178169" method="post" target="_blank">
+                <input type="submit" value="Fazer proposta" class="btn">
+            </form>
+        </section>
+    </div>
+
+    <div class="box_feedback">
+        <section class="feedback">
+            <div>
+                <p>Ótimo trabalhos</p>
+            </div>
+
+            <div>
+                <p>Trabalhador competente</p>
+            </div>
+
+            <div>
+                <p>fasghfx\dfvhbhjk</p>
+            </div>
+
+            <div>
+                <p>vsdcasdjdgasddcdbu</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="imgSuporte">
+        <a href="https://wa.me/+5511953178169" target="_blank">
+            <img src="imgWhats.png" alt="Suporte Imagem" width="50" height="50" title="Falar com o suporte Trampo.">
+        </a>
+    </div>
 
     <footer class="footer">
         <div class="escritaFooter">
@@ -40,6 +78,9 @@
                 04795-100<br> (11) 91234-5678</p>
         </div>
     </footer>
+
     <script type="module" src="scripts/header.js"></script>
+    <script src="scripts/img.js"></script>
 </body>
-</hmtl>
+
+</html>

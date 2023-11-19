@@ -2,35 +2,74 @@
 <html lang="pt-br">
 
 <head>
-    <title>Anuncio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diarista</title>
     <link rel="stylesheet" href="style/style_desktop.css">
+    <link rel="stylesheet" href="style/style_tablet.css">
     <link rel="stylesheet" href="style/style_mobile.css">
-    <link rel="stylesheet" href="style/style_cadastro.css">
+    <link rel="stylesheet" href="style/apresentacao.css">
+    <link rel="shortcut icon" href="mainpage/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header class="cabecalho_dinamico"></header>
+    <div class="cartao-apresentacao">
+        <section class="cartao">
+            <div class="apresentacao">
+                <img src="mainpage/img/Avatar.avif" alt="Foto perfil" class="fotoPerfil">
+                <p><strong>Sobre: </strong> Experiência na execução de serviços gerais de limpeza, organização e higienização de ambientes residenciais e empresariais,cumprindo os procedimentos e rotinas estabelecidas pelos empregadores com foco na excelência das tarefas executadas.</p>
+                <p><strong>Descrição de suas competências:</strong> Habilidade na higienizaçaõ de vidros, polimento de objetos, enceramento de pisos, remoção de pó de estantes, bancadas e tapetes, comunicação, respeito, gestão de tempo, entre outras tarefas distribuídas em planos de tarefas diárias.</p>
+            </div>
 
-    <section class="card">
-        <div class="apresentacao_trabalhador">
-            <h3 class="nome_trabalhador">Maria Helena da Silva</h3>
-            <h4 class="profissao">Profissão: Diarista</h4>
-        </div>
+            <div class="informacao">
+                <h2>Maria Helena da Silva</h2>
+                <p>Profissão: Diarista</p>
+                <p>São Paulo, Brasil</p>
+            </div>
 
-        <div class="competencias">
-            <p class="about"><b>Sobre:</b> Experiência na execução de serviços gerais de limpeza, organização e higienização de ambientes residenciais e empresariais,cumprindo os procedimentos e rotinas estabelecidas pelos empregadores com foco na excelência das tarefas executadas.</p>
-            <p class="descricao_trabalhador"><b>Descrição de suas competências:</b> Habilidade na higienizaçaõ de vidros, polimento de objetos, enceramento de pisos, remoção de pó de estantes, bancadas e tapetes, comunicação, respeito, gestão de tempo, entre outras tarefas distribuídas em planos de tarefas diárias.</p>   </div>
-        <div class="container_servicos_img">
-            <img src="mainpage/img/diarista/diarista1.jpg" alt="diarista">
-            <img src="mainpage/img/diarista/diarista2.jpg" alt="diarista">
-            <img src="mainpage/img/diarista/diarista3.jpg" alt="diarista">
-            <img src="mainpage/img/diarista/diarista4.jpg" alt="diarista">
-            <img src="mainpage/img/diarista/diarista5.jpg" alt="diarista">
-            <img src="mainpage/img/diarista/diarista6.jpg" alt="diarista">
-        </div>
-    </section>
+            <div class="imagens" id="imagens">
+                <img src="mainpage/img/diarista/diarista1.jpg" alt="diarista" id="foto1">
+                <img src="mainpage/img/diarista/diarista2.jpg" alt="diarista" id="foto2">
+                <img src="mainpage/img/diarista/diarista3.jpg" alt="diarista" id="foto3" class="sumir">
+                <img src="mainpage/img/diarista/diarista4.jpg" alt="diarista" id="foto4" class="sumir">
+                <img src="mainpage/img/diarista/diarista5.jpg" alt="diarista" id="foto5" class="sumir">
+                <img src="mainpage/img/diarista/diarista6.jpg" alt="diarista" id="foto6" class="sumir">
+
+                <input type="button" value="&#8645; Mostrar mais" class="btn" id="maisFotos">
+            </div>
+            <input type="button" value="Mostrar Menos" class="btn sumir" id="menosFotos">
+            <form action="https://wa.me/+5511953178169" method="post" target="_blank">
+                <input type="submit" value="Fazer proposta" class="btn">
+            </form>
+        </section>
+    </div>
+
+    <div class="box_feedback">
+        <section class="feedback">
+            <div>
+                <p>Ótimo trabalhos</p>
+            </div>
+
+            <div>
+                <p>Trabalhador competente</p>
+            </div>
+
+            <div>
+                <p>fasghfx\dfvhbhjk</p>
+            </div>
+
+            <div>
+                <p>vsdcasdjdgasddcdbu</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="imgSuporte">
+        <a href="https://wa.me/+5511953178169" target="_blank">
+            <img src="imgWhats.png" alt="Suporte Imagem" width="50" height="50" title="Falar com o suporte Trampo.">
+        </a>
+    </div>
 
     <footer class="footer">
         <div class="escritaFooter">
@@ -39,6 +78,9 @@
                 04795-100<br> (11) 91234-5678</p>
         </div>
     </footer>
+
     <script type="module" src="scripts/header.js"></script>
+    <script src="scripts/img.js"></script>
 </body>
-</hmtl>
+
+</html>
