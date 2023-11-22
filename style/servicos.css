@@ -1,0 +1,52 @@
+.secao-divs {
+  background-color: #ffffff;
+  width: 100%;
+  display: grid;
+  grid-gap: 0.2rem;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  height: calc(100vh - 50px);
+  align-items: center;
+  justify-items: center;
+}
+
+.list-item {
+  height: 300px;
+  width: 500px;
+  background-color: rgb(255, 253, 253);
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item .list-item-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.list-item ul li {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.list-item p {
+  text-align: center;
+}
+
+.list-item .list-item-btn {
+  cursor: pointer;
+  background-color: #6E378F;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  width: 100%;
+}
